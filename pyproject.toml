@@ -29,3 +29,8 @@ include = ["paper_voice*"]
 
 [tool.setuptools.package-data]
 paper_voice = ["data/*.json"]
+
+[project.urls]
+Homepage = "https://github.com/1506406880-a11y/top-journal-voice"
+Repository = "https://github.com/1506406880-a11y/top-journal-voice"
+Issues = "https://github.com/1506406880-a11y/top-journal-voice/issues"
