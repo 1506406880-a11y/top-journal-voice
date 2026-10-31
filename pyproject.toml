@@ -1,0 +1,31 @@
+[build-system]
+requires = ["setuptools>=61"]
+build-backend = "setuptools.build_meta"
+
+[project]
+name = "paper-voice"
+version = "0.1.0"
+description = "把稿件放进顶刊语体分位带：主张、证据、句段与结构的可复算体检"
+readme = "README.md"
+requires-python = ">=3.8"
+license = { text = "MIT" }
+authors = [{ name = "paper-voice contributors" }]
+keywords = ["academic-writing", "nature", "top-journal", "style", "peer-review", "cli"]
+classifiers = [
+    "Development Status :: 4 - Beta",
+    "Intended Audience :: Science/Research",
+    "License :: OSI Approved :: MIT License",
+    "Natural Language :: Chinese (Simplified)",
+    "Natural Language :: English",
+    "Programming Language :: Python :: 3",
+    "Topic :: Text Processing :: Linguistic",
+]
+
+[project.scripts]
+paper-voice = "paper_voice.cli:main"
+
+[tool.setuptools.packages.find]
+include = ["paper_voice*"]
+
+[tool.setuptools.package-data]
+paper_voice = ["data/*.json"]
